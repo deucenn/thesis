@@ -1,4 +1,4 @@
-# Priotitätswarteschlange & Runtimetests
+# Priorititätswarteschlange & Runtimetests
 import heapq
 import time
 
