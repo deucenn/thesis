@@ -46,28 +46,3 @@ def AStar(graph, start, goal, heuristic):
     elapsed = end_time - start_time
     
     return g, prev, elapsed
-
-# Beispiel für die Heuristik (z.B. Manhattan-Distanz oder euklidische Distanz)
-def example_heuristic(node):
-    # Dummy-Implementierung: einfache Heuristik als Platzhalter
-    return abs(node - goal)
-
-# Beispielgraph (Adjazenzmatrix)
-graph = [
-    [0, 1, 4, 0, 0, 0],
-    [1, 0, 2, 6, 0, 0],
-    [4, 2, 0, 3, 5, 0],
-    [0, 6, 3, 0, 2, 6],
-    [0, 0, 5, 2, 0, 4],
-    [0, 0, 0, 6, 4, 0]
-]
-
-start = 0  # Startknoten
-goal = 5   # Zielknoten
-heuristic = [10, 9, 7, 5, 3, 0]  # Dummy-Heuristikwerte (z.B. euklidische oder Manhattan-Distanz)
-
-g, prev, elapsed = AStar(graph, start, goal, heuristic)
-
-print(f"Distanz: {g}")
-print(f"Vorgänger: {prev}")
-print(f"Laufzeit: {elapsed} Sekunden\n")
